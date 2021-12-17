@@ -1,10 +1,20 @@
 .header {
-  height: 48px;
+  height: 90px;
+  padding: 18px 20px;
   display: flex;
-  align-items: stretch;
-  background-color: #0078d7;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
   color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo {
+}
+
+.navIcon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

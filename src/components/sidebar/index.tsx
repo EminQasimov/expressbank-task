@@ -1,7 +1,19 @@
+import clsx from 'clsx'
 import { NavLink } from 'react-router-dom'
 
 import { UserIcon } from '~/assets/icons'
 
+import {
+  AniPayIcon,
+  DashboardIcon,
+  ExpressPosIcon,
+  HistoryIcon,
+  MapIcon,
+  PaymentsIcon,
+  PayrollIcon,
+  ProductsIcon,
+  TemplatesIcon,
+} from './icons'
 import styles from './sidebar.module.scss'
 
 export function Sidebar() {
@@ -9,52 +21,52 @@ export function Sidebar() {
     {
       title: 'Dashboard',
       path: 'dashboard',
-      icon: <UserIcon />,
+      icon: <DashboardIcon />,
     },
     {
       title: 'Payments',
       path: 'payments',
-      icon: <UserIcon />,
+      icon: <PaymentsIcon />,
     },
     {
       title: 'Payroll',
       path: 'payroll',
-      icon: <UserIcon />,
+      icon: <PayrollIcon />,
     },
     {
       title: 'Templates',
       path: 'templates',
-      icon: <UserIcon />,
+      icon: <TemplatesIcon />,
     },
     {
       title: 'History',
       path: 'history',
-      icon: <UserIcon />,
+      icon: <HistoryIcon />,
     },
     {
       title: 'Products',
       path: 'products',
-      icon: <UserIcon />,
+      icon: <ProductsIcon />,
     },
     {
       title: 'Express POS',
       path: 'express-pos',
-      icon: <UserIcon />,
+      icon: <ExpressPosIcon />,
     },
     {
       title: 'Ani Pay',
       path: 'ani-pay',
-      icon: <UserIcon />,
+      icon: <AniPayIcon />,
     },
     {
       title: 'Map',
       path: 'map',
-      icon: <UserIcon />,
+      icon: <MapIcon />,
     },
   ]
 
   return (
-    <nav className={styles.sidebar}>
+    <div className={styles.sidebar}>
       <ul className={styles.menu}>
         {menus.map(({ title, icon, path }) => {
           return (
@@ -62,15 +74,15 @@ export function Sidebar() {
               <NavLink
                 to={`/${path}`}
                 className={({ isActive }) =>
-                  isActive ? `${styles.item} ${styles.active}` : styles.item
+                  clsx(styles.item, isActive && styles.active)
                 }>
-                {icon}
+                <span className={styles.icon}>{icon}</span>
                 <p className={styles.itemText}>{title}</p>
               </NavLink>
             </li>
           )
         })}
       </ul>
-    </nav>
+    </div>
   )
 }

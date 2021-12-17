@@ -1,10 +1,5 @@
-
 import styles from './button.module.scss'
 
-export function Button() {
-  return (
-    <button className={styles.button}>
-      button
-    </button>
-  )
+export function Button({ children }) {
+  return <button className={styles.button}>{children}</button>
 }

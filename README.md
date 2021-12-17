@@ -47,13 +47,17 @@ pnpm dev
 - Github actions used as CI/CD setup. deploys to Netlify when merged to dev->main
 - Path aliases ~/
 
-&nbsp;
-&nbsp;
+### Notes
+
+- Proxima Nova font not supports ə letter
+
+### Used Tools
+
+- svg optimizer - https://jakearchibald.github.io/svgomg/
+- svg to tsx - https://react-svgr.com/playground/?typescript=true
+- css woff font generator - https://transfonter.org/
 
 ---
-
-&nbsp;
-&nbsp;
 
 ### My Other projects should be helpfull.
 
