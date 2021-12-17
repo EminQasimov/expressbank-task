@@ -1,0 +1,36 @@
+.container {
+  overflow: hidden;
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0px;
+  margin: 0 8px;
+}
+
+.head {
+  height: auto;
+  display: block;
+  padding: 12px 8px 0 8px;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.heading {
+  color: #3e69e4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 8px;
+}
+
+.body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+}

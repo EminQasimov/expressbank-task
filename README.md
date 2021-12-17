@@ -1,38 +1,37 @@
 # Expressbank task - [Demo](https://expressbank-task.netlify.app/)
 
-<img src='public\expressbank-logo.jpg' style='width: 400px'/>
-
----
+![](public\expressbank-logo.jpg)
 
 ## Requirements
 
 - Design given Figma UI pixel perfect.
 
- 
 ---
 
-## Usage
+## How to install
 
-Easy way is to use Gitpod in browser editor,
+Easy way to install and run demo is to use Gitpod in browser editor.
+
 just Click button and all will be done.
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/EminQasimov/expressbank-task)
 
----
+# or
 
 This project was bootstrapped with [Vite.js](https://vitejs.dev), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/).
 
 `pnpm create vite my-react-app -- --template react-ts`
 
-use **pnpm** . if not have installed, use `npm install -g pnpm`
+use **pnpm** . (if not have installed, use `npm install -g pnpm`)
 
 I disabled yarn/npm ( `"preinstall": "npx only-allow pnpm"`) in order my app can install correct package versions.
 
 ```bash
 pnpm dev
 
-# Open  http://localhost:3000 .
+# Open  http://localhost:3000
 ```
- 
+
 ---
 
 ### Features
@@ -41,12 +40,12 @@ pnpm dev
 - Typescript
 - Vite
 - Redux/RTK
-- React Router v6 💥
+- React Router v6
 - Eslint/Prettier
 - Notification center - error/succes toasts
 - Demo on Netlify
-- CI/CD setup - Github actions - deploy Netlify dev->main
-- Path aliases ~/ 
+- Github actions used as CI/CD setup. deploys to Netlify when merged to dev->main
+- Path aliases ~/
 
 &nbsp;
 &nbsp;
@@ -58,7 +57,7 @@ pnpm dev
 
 ### My Other projects should be helpfull.
 
-- https://github.com/EminQasimov/myprojects  (request to eminqasimov@outlook.com for access)
+- https://github.com/EminQasimov/myprojects (request to eminqasimov@outlook.com for access)
 
 - #### Some art works
 
