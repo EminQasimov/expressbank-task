@@ -2,7 +2,7 @@ import { SearchIcon } from '~/assets/icons'
 
 import styles from './search.module.scss'
 
-export function Search({ placeholder }) {
+export function Search({ placeholder }: { placeholder?: string }) {
   return (
     <div className={styles.wrapper}>
       <span className={styles.icon}>
