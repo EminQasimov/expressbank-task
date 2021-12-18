@@ -1,1 +1,1 @@
-export { PaymentsModule } from './payments'
+export { default as PaymentsModule } from './payments'

@@ -2,9 +2,9 @@ import { createAsyncThunk } from '@reduxjs/toolkit'
 
 import * as api from '~/api'
 
-export const getPayments = createAsyncThunk(
-  'payments/getPayments',
+export const getPaymentCurrencies = createAsyncThunk(
+  'payments/getPaymentCurrencies',
   async () => {
-    return await api.payments.fetchPayments()
+    return await api.payments.fetchPaymentCurrencies()
   },
 )
