@@ -21,7 +21,7 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #616173;
   font-family: 'Proxima Nova';
   appearance: none;
   display: flex;
@@ -80,4 +80,13 @@
   padding: 4px 8px;
   outline: none;
   cursor: pointer;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-right: 10px;
+  display: inline-flex;
 }
