@@ -5,13 +5,13 @@
   border-radius: 7px;
   height: 50px;
   padding: 15px 20px;
-
+  width: 100%;
   transition: border-color 0.2s ease-in-out;
-
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
   color: #000;
+  font-family: 'Proxima Nova';
 
   &:hover,
   &:focus {
@@ -21,5 +21,13 @@
 
   &::placeholder {
     color: #9d9da9;
+    font-family: 'Proxima Nova';
   }
+}
+
+.labelText {
+  font-size: 16px;
+  line-height: 19px;
+  color: #616173;
+  margin-bottom: 5px;
 }

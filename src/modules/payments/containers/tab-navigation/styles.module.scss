@@ -26,19 +26,31 @@
   color: #b1b4be;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 
+  &:hover:not(.active) {
+    opacity: 0.5;
+  }
+
+  &:hover,
   &.active {
     color: #232021;
 
     &:after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #232021;
+      opacity: 1;
     }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #232021;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
   }
 
   &.special {

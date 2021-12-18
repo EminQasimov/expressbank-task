@@ -1,10 +1,10 @@
 # Expressbank task - [Demo](https://expressbank-task.netlify.app/)
 
-![](public\expressbank-logo.jpg)
+![](./public/expressbank-logo.jpg)
 
 ## Requirements
 
-- Design given Figma UI pixel perfect.
+- Design given Figma UI.
 
 ---
 
@@ -18,15 +18,16 @@ just Click button and all will be done.
 
 # or
 
-This project was bootstrapped with [Vite.js](https://vitejs.dev), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/).
+This project was bootstrapped with [Vite.js]
 
 `pnpm create vite my-react-app -- --template react-ts`
 
-use **pnpm** . (if not have installed, use `npm install -g pnpm`)
+use **pnpm** . (if not have installed `npm install -g pnpm`)
 
 I disabled yarn/npm ( `"preinstall": "npx only-allow pnpm"`) in order my app can install correct package versions.
 
 ```bash
+pnpm i
 pnpm dev
 
 # Open  http://localhost:3000
@@ -34,22 +35,23 @@ pnpm dev
 
 ---
 
-### Features
+### My Notes
+
+- Mobile friendly responsivness not implemented.
+
+### Used tech stack and tools
 
 - React
 - Typescript
 - Vite
 - Redux/RTK
 - React Router v6
+- some Radix UI primitives
 - Eslint/Prettier
 - Notification center - error/succes toasts
 - Demo on Netlify
 - Github actions used as CI/CD setup. deploys to Netlify when merged to dev->main
 - Path aliases ~/
-
-### Notes
-
-- Proxima Nova font not supports ə letter
 
 ### Used Tools
 
@@ -57,6 +59,7 @@ pnpm dev
 - svg to tsx - https://react-svgr.com/playground/?typescript=true
 - css woff font generator - https://transfonter.org/
 - favicon generator - https://www.favicon-generator.org/
+- flag icons - https://flagicons.lipis.dev/
 
 ---
 
@@ -64,7 +67,7 @@ pnpm dev
 
 - https://github.com/EminQasimov/myprojects (request to eminqasimov@outlook.com for access)
 
-- #### Some art works
+- #### Some css works
 
   - https://github.com/EminQasimov/3d-box-css
   - https://github.com/EminQasimov/app.prospect.az-logo-preloder

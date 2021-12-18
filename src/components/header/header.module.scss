@@ -6,15 +6,35 @@
   background: rgba(255, 255, 255, 0.9);
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 110px;
 }
 
-.logo {
+.search {
+  width: 100%;
+  max-width: 355px;
+  margin-right: auto;
 }
 
-.navIcon {
-  width: 45px;
-  height: 45px;
+.list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 0 8px;
+    &:last-child,
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 50px;
+  background-color: #e6e6e6;
+}
+
+.item {
 }

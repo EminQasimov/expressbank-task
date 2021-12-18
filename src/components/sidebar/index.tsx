@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { NavLink } from 'react-router-dom'
 
 import { UserIcon } from '~/assets/icons'
+import { Scrollbar } from '~/ui'
 
 import {
   AniPayIcon,
@@ -66,23 +67,25 @@ export function Sidebar() {
   ]
 
   return (
-    <div className={styles.sidebar}>
-      <ul className={styles.menu}>
-        {menus.map(({ title, icon, path }) => {
-          return (
-            <li key={title}>
-              <NavLink
-                to={`/${path}`}
-                className={({ isActive }) =>
-                  clsx(styles.item, isActive && styles.active)
-                }>
-                <span className={styles.icon}>{icon}</span>
-                <p className={styles.itemText}>{title}</p>
-              </NavLink>
-            </li>
-          )
-        })}
-      </ul>
-    </div>
+    <Scrollbar>
+      <div className={styles.sidebar}>
+        <ul className={styles.menu}>
+          {menus.map(({ title, icon, path }) => {
+            return (
+              <li key={title}>
+                <NavLink
+                  to={`/${path}`}
+                  className={({ isActive }) =>
+                    clsx(styles.item, isActive && styles.active)
+                  }>
+                  <span className={styles.icon}>{icon}</span>
+                  <p className={styles.itemText}>{title}</p>
+                </NavLink>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </Scrollbar>
   )
 }

@@ -1,0 +1,63 @@
+.conversionForm {
+  padding: 25px 30px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #232021;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 40px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.spaceX {
+  width: 20px;
+}
+
+.formCol {
+  flex: 1;
+}
+
+.formInputContainer {
+  flex: 1;
+}
+
+.lastInput {
+  margin-top: 26px;
+}
+
+.formTitle {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #5f6369;
+  font-weight: 600;
+  margin-bottom: 21px;
+}
+
+.commission {
+  max-width: 646px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+.labelText {
+  font-size: 16px;
+  line-height: 19px;
+  color: #616173;
+  margin-bottom: 5px;
+}

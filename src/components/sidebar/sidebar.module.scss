@@ -1,4 +1,5 @@
 .sidebar {
+  max-height: 100%;
 }
 
 ul.menu {
@@ -41,6 +42,9 @@ ul.menu {
   border-radius: 99px;
   background: #d4d8e2;
   margin-bottom: 6px;
+  perspective: 1000px;
+  transform: scale(1.001);
+  backface-visibility: hidden;
 }
 
 .itemText {
@@ -71,6 +75,6 @@ ul.menu {
     transform: scale(1.05);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.001);
   }
 }

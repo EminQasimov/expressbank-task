@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+}
+
+.input {
+  width: 100%;
+  background-color: #f1f1f5;
+  border: none;
+  border-radius: 99px;
+  height: 35px;
+  padding: 11px 15px;
+  padding-left: 42px;
+  transition: background-color 0.2s ease-in-out;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: #474c54;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #eff0f5;
+  }
+
+  &::placeholder {
+    color: #616173;
+    font-weight: 400;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

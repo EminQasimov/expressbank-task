@@ -9,6 +9,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
+    "@radix-ui/react-scroll-area": "^0.1.3",
     "@reduxjs/toolkit": "^1.5.1",
     "clsx": "^1.1.1",
     "history": "5",
