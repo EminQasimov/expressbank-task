@@ -56,6 +56,7 @@ pnpm dev
 - svg optimizer - https://jakearchibald.github.io/svgomg/
 - svg to tsx - https://react-svgr.com/playground/?typescript=true
 - css woff font generator - https://transfonter.org/
+- favicon generator - https://www.favicon-generator.org/
 
 ---
 
