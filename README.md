@@ -1,4 +1,4 @@
-# Expressbank task - [Demo](https://expressbank-task.netlify.app/)
+# Expressbank task - [Demo](https://expressbank-task.netlify.app)
 
 ![](./public/expressbank-logo.jpg)
 
@@ -53,7 +53,7 @@ pnpm dev
 - Github actions used as CI/CD setup. deploys to Netlify when merged to dev->main
 - Path aliases ~/
 
-### Used Tools
+### Used Tools and Credits
 
 - svg optimizer - https://jakearchibald.github.io/svgomg/
 - svg to tsx - https://react-svgr.com/playground/?typescript=true
