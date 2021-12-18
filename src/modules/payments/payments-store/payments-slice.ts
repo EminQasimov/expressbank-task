@@ -2,28 +2,28 @@ import { createSlice } from '@reduxjs/toolkit'
 
 import { Payment } from '~/types'
 
-import { getPayments } from './payments-api-actions'
+import { getPaymentCurrencies } from './payments-api-actions'
 
 export interface PaymentsState {
-  payments: Payment[]
+  currencies: Payment[]
 }
 
 const initialState: PaymentsState = {
-  payments: [],
+  currencies: [],
 }
 
 export const paymentsSlice = createSlice({
   name: 'payments',
   initialState,
   reducers: {
-    selectTabId: (state, action) => {},
+    // selectId: (state, action) => {},
   },
   extraReducers: (builder) => {
-    builder.addCase(getPayments.fulfilled, (state, action) => {
-      state.payments = action.payload
+    builder.addCase(getPaymentCurrencies.fulfilled, (state, action) => {
+      state.currencies = action.payload
     })
   },
 })
 
-export const { selectTabId } = paymentsSlice.actions
+// export const {} = paymentsSlice.actions
 export const paymentsReducer = paymentsSlice.reducer

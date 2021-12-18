@@ -1,3 +1,3 @@
 import { RootState } from '~/store'
 
-export const selectPaymentsCount = (store: RootState) => store.payments
+export const selectCurrencies = (store: RootState) => store.payments.currencies

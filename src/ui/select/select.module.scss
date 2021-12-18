@@ -1,0 +1,83 @@
+.wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  &:active .select {
+    background: #e6e7ec;
+  }
+}
+
+.select {
+  cursor: pointer;
+  background: #f7f8fd;
+  border: 1px solid #dadae5;
+  box-sizing: border-box;
+  border-radius: 7px;
+  height: 50px;
+  padding: 15px 20px;
+  width: 100%;
+  transition: all 0.1s ease-in-out;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #000;
+  font-family: 'Proxima Nova';
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #c4c4d6;
+  }
+}
+
+.label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #616173;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.placeholder {
+  font-family: 'Proxima Nova';
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #9d9da9;
+}
+
+.popover {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #e9e9f0;
+  background: #fff;
+  margin-top: 4px;
+  z-index: 99;
+  border-radius: 6px;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5),
+    0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  overflow: hidden;
+}
+
+.listBox {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.optionLi {
+  padding: 4px 8px;
+  outline: none;
+  cursor: pointer;
+}

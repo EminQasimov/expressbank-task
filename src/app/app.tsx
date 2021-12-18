@@ -1,11 +1,11 @@
-import './fonts.css'
+import '~/styles/index.scss'
 
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import { PaymentsModule } from '~/modules'
 
 import { AppLayout } from './app-layout'
-import { NotFound } from './not-found-page'
+import { NotFound } from './not-found'
 import Providers from './providers'
 
 export function App() {

@@ -4,16 +4,8 @@ import { Icon, Logo, Search } from '~/ui'
 
 import { AccountInfo } from './account-info/account-info'
 import styles from './header.module.scss'
-import {
-  BellIcon,
-  CartIcon,
-  EnvelopeIcon,
-  LockIcon,
-  LogoutIcon,
-  SettingsIcon,
-  StatsIcon,
-  UsersIcon,
-} from './icons'
+import { LogoutIcon } from './icons'
+import { IconsGroup } from './icons-group/icons-group'
 import { Phone } from './phone/phone'
 
 export function Header() {
@@ -29,41 +21,11 @@ export function Header() {
         <Search placeholder="Search" />
       </div>
 
-      <ul className={styles.list}>
-        <li>
-          <Icon icon={<StatsIcon />} />
-        </li>
-        <li>
-          <Icon icon={<CartIcon />} />
-        </li>
-        <li>
-          <Icon icon={<LockIcon />} />
-        </li>
+      <IconsGroup />
 
-        <li className={styles.divider} />
+      <AccountInfo />
 
-        <li>
-          <Icon icon={<UsersIcon />} />
-        </li>
-
-        <li>
-          <Icon icon={<SettingsIcon />} />
-        </li>
-        <li>
-          <Icon icon={<EnvelopeIcon />} />
-        </li>
-        <li>
-          <Icon icon={<BellIcon />} count={9} />
-        </li>
-      </ul>
-
-      <div>
-        <AccountInfo />
-      </div>
-
-      <div>
-        <Icon icon={<LogoutIcon />} active />
-      </div>
+      <Icon icon={<LogoutIcon />} active />
     </div>
   )
 }
