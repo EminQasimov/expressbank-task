@@ -1,10 +1,7 @@
+import { ReactNode } from 'react'
 
 import styles from './button.module.scss'
 
-export function Button() {
-  return (
-    <button className={styles.button}>
-      button
-    </button>
-  )
+export function Button({ children }: { children: ReactNode }) {
+  return <button className={styles.button}>{children}</button>
 }

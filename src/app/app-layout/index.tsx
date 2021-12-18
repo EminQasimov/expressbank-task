@@ -2,24 +2,28 @@ import { Outlet } from 'react-router-dom'
 
 import { Header, Sidebar } from '~/components'
 
+import BackgroundLogo from './background-logo'
 import styles from './layout.module.scss'
 
 export function AppLayout() {
   return (
-    <div className={styles.layout}>
+    <>
       <header>
         <Header />
       </header>
 
-      <section className={styles.content}>
-        <aside className={styles.left}>
+      <div className={styles.fullHeightWrapper}>
+        <nav className={styles.nav}>
           <Sidebar />
-        </aside>
+        </nav>
 
-        <main className={styles.right}>
-          <Outlet />
+        <main className={styles.main}>
+          <BackgroundLogo className={styles.bgLogo} />
+          <div className={styles.moduleContainer}>
+            <Outlet />
+          </div>
         </main>
-      </section>
-    </div>
+      </div>
+    </>
   )
 }

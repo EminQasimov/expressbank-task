@@ -1,0 +1,85 @@
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+  table-layout: fixed;
+  margin-bottom: calc(58px - 40px);
+  font-family: 'Proxima Nova';
+
+  td,
+  th {
+    text-align-last: left;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 30px;
+  }
+
+  th:last-child {
+    width: 28%;
+  }
+
+  // td:last-child {
+  //   width: 300px;
+  // }
+
+  thead tr {
+    height: 65px;
+  }
+
+  tbody tr {
+    height: 40px;
+
+    &:first-child {
+      background: #f6f6fa;
+    }
+  }
+}
+
+.currency {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+  color: #000;
+  margin-left: 9px;
+}
+
+.tdInner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.statusIcon {
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rateNumber {
+  margin-left: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.headTitle {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #616173;
+}
+
+.bodyTitle {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+  color: #616173;
+}

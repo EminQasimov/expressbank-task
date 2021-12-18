@@ -1,0 +1,47 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  width: 45px;
+  height: 45px;
+  transition: background 0.2s ease-in-out;
+  position: relative;
+  border-radius: 99px;
+
+  &:hover,
+  &.active {
+    background: rgba(0, 0, 0, 0.01);
+    cursor: pointer;
+  }
+
+  svg {
+    backface-visibility: hidden;
+    transition: transform 0.2s ease-in-out;
+    transform: perspective(1000px) scale(1);
+  }
+
+  &:active > svg {
+    transform: perspective(1000px) scale(0.955);
+  }
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #f9c20a;
+
+  font-size: 11px;
+  line-height: 11px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #231f20;
+}

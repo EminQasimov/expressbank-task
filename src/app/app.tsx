@@ -1,9 +1,11 @@
+import './fonts.css'
+
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import { PaymentsModule } from '~/modules'
-import { EmptyState } from '~/ui'
 
 import { AppLayout } from './app-layout'
+import { NotFound } from './not-found-page'
 import Providers from './providers'
 
 export function App() {
@@ -12,11 +14,8 @@ export function App() {
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Navigate to="/payments" replace />} />
-          <Route path="/payments" element={<PaymentsModule />} />
-          <Route
-            path="*"
-            element={<EmptyState text="Looking for something?" />}
-          />
+          <Route path="payments/*" element={<PaymentsModule />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Providers>

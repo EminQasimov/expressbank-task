@@ -1,4 +1,23 @@
 .button {
-  background-color: orange;
-}
+  min-width: 165px;
+  padding: 24px 48px;
+  background: #f9c20a;
+  border-radius: 8px;
+  appearance: none;
+  border: none;
 
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #231f20;
+  line-height: 16px;
+
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
