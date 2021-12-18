@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { useButton } from '@react-aria/button'
 import { AriaSelectOptions, HiddenSelect, useSelect } from '@react-aria/select'
 import { Item } from '@react-stately/collections'
@@ -16,15 +15,16 @@ type SelectProps = {
   placeholder?: string
   name?: string
   children?: any
+  text?: string
 }
 
 export function Select(props: SelectProps & AriaSelectOptions<object>) {
-  const { placeholder } = props
+  const { placeholder, text } = props
   // Create state based on the incoming props
   let state = useSelectState(props)
 
   // Get props for child elements from useSelect
-  let ref = useRef()
+  let ref = useRef<HTMLButtonElement>(null)
   let { labelProps, triggerProps, valueProps, menuProps } = useSelect(
     props,
     state,
@@ -49,7 +49,10 @@ export function Select(props: SelectProps & AriaSelectOptions<object>) {
       <button className={styles.select} {...buttonProps} ref={ref}>
         <span {...valueProps}>
           {state.selectedItem ? (
-            state.selectedItem.rendered
+            <span>
+              {text && <span className={styles.text}>{text}</span>}
+              {state.selectedItem.rendered}
+            </span>
           ) : (
             <span className={styles.placeholder}>{placeholder}</span>
           )}

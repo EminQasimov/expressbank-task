@@ -25,12 +25,10 @@ export const BuyInfo = () => {
         </div>
 
         <div className={styles.lastInput}>
-          <Select label="Account" placeholder="Account">
-            <Item>USD</Item>
-            <Item>RUB</Item>
-            <Item>GBP</Item>
-            <Item>TRY</Item>
-            <Item>EUR</Item>
+          <Select label="Account" placeholder="Account" text="My account">
+            <Item>AZ50AZEN40060495078744101001</Item>
+            <Item>RU50AZEN40060495088944165601</Item>
+            <Item>TR50AZEN40564495088944101001</Item>
           </Select>
         </div>
       </div>
