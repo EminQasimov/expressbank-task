@@ -38,6 +38,7 @@ pnpm dev
 ### My Notes
 
 - Mobile friendly responsivness not implemented.
+- Themeing not applied
 
 ### Used tech stack and tools
 
