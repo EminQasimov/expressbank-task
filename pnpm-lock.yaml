@@ -31,7 +31,6 @@ specifiers:
   react-router-dom: '6'
   sass: ^1.43.4
   typescript: ^4.3.2
-  use-sound: ^4.0.1
   vite: 2.6.4
 
 dependencies:
@@ -45,7 +44,6 @@ dependencies:
   react-hot-toast: 2.1.1_react-dom@17.0.2+react@17.0.2
   react-redux: 7.2.6_react-dom@17.0.2+react@17.0.2
   react-router-dom: 6.1.1_react-dom@17.0.2+react@17.0.2
-  use-sound: 4.0.1_react@17.0.2
 
 devDependencies:
   '@types/node': 16.11.14
@@ -1766,10 +1764,6 @@ packages:
     dependencies:
       react-is: 16.13.1
 
-  /howler/2.2.3:
-    resolution: {integrity: sha512-QM0FFkw0LRX1PR8pNzJVAY25JhIWvbKMBFM4gqk+QdV+kPXOhleWGCB6AiAF/goGjIHK2e/nIElplvjQwhr0jg==}
-    dev: false
-
   /ignore/4.0.6:
     resolution: {integrity: sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==}
     engines: {node: '>= 4'}
@@ -2694,15 +2688,6 @@ packages:
     dependencies:
       punycode: 2.1.1
     dev: true
-
-  /use-sound/4.0.1_react@17.0.2:
-    resolution: {integrity: sha512-hykJ86kNcu6y/FzlSHcQxhjSGMslZx2WlfLpZNoPbvueakv4OF3xPxEtGV2YmculrIaH0tPp9LtG4jgy17xMWg==}
-    peerDependencies:
-      react: '>=16.8'
-    dependencies:
-      howler: 2.2.3
-      react: 17.0.2
-    dev: false
 
   /v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
