@@ -13,12 +13,12 @@ export function AppLayout() {
       </header>
 
       <div className={styles.fullHeightWrapper}>
+        <BackgroundLogo className={styles.bgLogo} />
         <nav className={styles.nav}>
           <Sidebar />
         </nav>
 
         <main className={styles.main}>
-          <BackgroundLogo className={styles.bgLogo} />
           <div className={styles.moduleContainer}>
             <Outlet />
           </div>
