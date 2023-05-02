@@ -1,6 +1,5 @@
-# Expressbank task - [Demo](https://expressbank-task.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/9c31b5cf-5669-452a-b959-f1fe3affc6b9/deploy-status)](https://app.netlify.com/sites/expressbank-task/deploys)
+# ~~Expressbank task~~ - [Demo](https://expressbank-task.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/9c31b5cf-5669-452a-b959-f1fe3affc6b9/deploy-status)](https://app.netlify.com/sites/expressbank-task/deploys)
 
-![](./public/expressbank-logo.jpg)
 
 ## Requirements
 
